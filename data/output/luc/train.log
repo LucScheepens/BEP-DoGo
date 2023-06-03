@@ -1,0 +1,790 @@
+Starting at  2023-05-18 16:08:49.027020
+arguments parsed: Namespace(config_file='config/simclr.yaml', train=<config.option.Namespace object at 0x00000239A6CBB090>, eval=<config.option.Namespace object at 0x00000239A6902510>, device=device(type='cuda'), log_dir='data/output/luc', writer=<torch.utils.tensorboard.writer.SummaryWriter object at 0x00000239A691A990>, start_time=datetime.datetime(2023, 5, 18, 16, 8, 49, 27020))
+Took 0:00:02.835141 time to load data!
+Batch 0/195. Loss: 6.185622215270996.  Time elapsed: 0:00:51.955655 
+Starting at  2023-05-18 16:11:11.364451
+arguments parsed: Namespace(config_file='config/simclr.yaml', train=<config.option.Namespace object at 0x000002072074A3D0>, eval=<config.option.Namespace object at 0x000002072078A490>, device=device(type='cuda'), log_dir='data/output/luc', writer=<torch.utils.tensorboard.writer.SummaryWriter object at 0x000002072044E0D0>, start_time=datetime.datetime(2023, 5, 18, 16, 11, 11, 364451))
+Took 0:00:02.633758 time to load data!
+Batch 0/195. Loss: 6.185622215270996.  Time elapsed: 0:00:36.156637 
+Batch 50/195. Loss: 5.854310512542725.  Time elapsed: 0:01:59.239964 
+Batch 100/195. Loss: 5.690486907958984.  Time elapsed: 0:03:22.286615 
+Starting at  2023-05-18 16:16:15.844956
+arguments parsed: Namespace(config_file='config/simclr.yaml', train=<config.option.Namespace object at 0x0000020AC9656110>, eval=<config.option.Namespace object at 0x0000020AC99398D0>, device=device(type='cuda'), log_dir='data/output/luc', writer=<torch.utils.tensorboard.writer.SummaryWriter object at 0x0000020ACA0EE650>, start_time=datetime.datetime(2023, 5, 18, 16, 16, 15, 844956))
+Took 0:00:02.464020 time to load data!
+Starting at  2023-05-18 16:17:36.943761
+arguments parsed: Namespace(config_file='config/simclr.yaml', train=<config.option.Namespace object at 0x00000285ED85CD90>, eval=<config.option.Namespace object at 0x00000285EDAFE910>, device=device(type='cuda'), log_dir='data/output/luc', writer=<torch.utils.tensorboard.writer.SummaryWriter object at 0x00000285ED85DA50>, start_time=datetime.datetime(2023, 5, 18, 16, 17, 36, 943761))
+Took 0:00:02.487915 time to load data!
+Batch 0/195. Loss: 6.185622215270996.  Time elapsed: 0:00:33.798967 
+Batch 50/195. Loss: 5.834792613983154.  Time elapsed: 0:01:57.291777 
+Batch 100/195. Loss: 5.687326431274414.  Time elapsed: 0:03:20.861748 
+Batch 150/195. Loss: 5.667710304260254.  Time elapsed: 0:04:44.735775 
+Epoch 1/100. Total Loss: 5.710895721728985.   Time elapsed: 0:05:59.788134 
+Batch 0/195. Loss: 5.523248672485352.  Time elapsed: 0:06:36.212864 
+Batch 50/195. Loss: 5.448465347290039.  Time elapsed: 0:07:54.232992 
+Batch 100/195. Loss: 5.423612594604492.  Time elapsed: 0:09:11.694465 
+Batch 150/195. Loss: 5.364902019500732.  Time elapsed: 0:10:29.194466 
+Epoch 2/100. Total Loss: 5.418446423457219.   Time elapsed: 0:11:38.032887 
+Batch 0/195. Loss: 5.381267070770264.  Time elapsed: 0:11:54.367239 
+Batch 50/195. Loss: 5.3102922439575195.  Time elapsed: 0:13:11.711205 
+Batch 100/195. Loss: 5.395955562591553.  Time elapsed: 0:14:29.159836 
+Batch 150/195. Loss: 5.402696132659912.  Time elapsed: 0:15:46.589129 
+Epoch 3/100. Total Loss: 5.31950182792468.   Time elapsed: 0:16:55.459713 
+Batch 0/195. Loss: 5.308778762817383.  Time elapsed: 0:17:11.609258 
+Batch 50/195. Loss: 5.185916900634766.  Time elapsed: 0:18:28.929061 
+Batch 100/195. Loss: 5.33090877532959.  Time elapsed: 0:19:46.374686 
+Batch 150/195. Loss: 5.184886932373047.  Time elapsed: 0:21:03.796798 
+Epoch 4/100. Total Loss: 5.2419239973410585.   Time elapsed: 0:22:12.603051 
+Batch 0/195. Loss: 5.25214958190918.  Time elapsed: 0:22:28.871055 
+Batch 50/195. Loss: 5.18997859954834.  Time elapsed: 0:23:46.194214 
+Batch 100/195. Loss: 5.224953651428223.  Time elapsed: 0:25:03.630933 
+Batch 150/195. Loss: 5.141280174255371.  Time elapsed: 0:26:21.103564 
+Epoch 5/100. Total Loss: 5.176597690582275.   Time elapsed: 0:27:29.951796 
+Batch 0/195. Loss: 5.1004838943481445.  Time elapsed: 0:27:47.294551 
+Batch 50/195. Loss: 5.12153959274292.  Time elapsed: 0:29:04.633989 
+Batch 100/195. Loss: 5.150264263153076.  Time elapsed: 0:30:22.049461 
+Batch 150/195. Loss: 5.134426116943359.  Time elapsed: 0:31:39.460950 
+Epoch 6/100. Total Loss: 5.129627797542474.   Time elapsed: 0:32:48.298540 
+Batch 0/195. Loss: 5.043854713439941.  Time elapsed: 0:33:04.369645 
+Batch 50/195. Loss: 5.0545501708984375.  Time elapsed: 0:34:21.704479 
+Batch 100/195. Loss: 5.084969997406006.  Time elapsed: 0:35:39.117693 
+Batch 150/195. Loss: 5.043592929840088.  Time elapsed: 0:36:56.534263 
+Epoch 7/100. Total Loss: 5.09932346588526.   Time elapsed: 0:38:05.352226 
+Batch 0/195. Loss: 5.076746940612793.  Time elapsed: 0:38:21.800036 
+Batch 50/195. Loss: 5.037618637084961.  Time elapsed: 0:39:39.115280 
+Batch 100/195. Loss: 5.051729679107666.  Time elapsed: 0:40:56.539283 
+Batch 150/195. Loss: 5.053592205047607.  Time elapsed: 0:42:14.087908 
+Epoch 8/100. Total Loss: 5.072932698176458.   Time elapsed: 0:43:23.128204 
+Batch 0/195. Loss: 5.073793888092041.  Time elapsed: 0:43:42.231027 
+Batch 50/195. Loss: 5.030079364776611.  Time elapsed: 0:44:59.674394 
+Batch 100/195. Loss: 5.040363788604736.  Time elapsed: 0:46:17.265634 
+Batch 150/195. Loss: 5.021847248077393.  Time elapsed: 0:47:34.799519 
+Epoch 9/100. Total Loss: 5.046335917252761.   Time elapsed: 0:48:43.870324 
+Batch 0/195. Loss: 5.053604602813721.  Time elapsed: 0:49:02.664877 
+Batch 50/195. Loss: 4.992696762084961.  Time elapsed: 0:50:20.148740 
+Batch 100/195. Loss: 5.052173137664795.  Time elapsed: 0:51:37.728309 
+Batch 150/195. Loss: 5.01624870300293.  Time elapsed: 0:52:55.181924 
+Epoch 10/100. Total Loss: 5.032530038784712.   Time elapsed: 0:54:04.062295 
+checkpoint saved at data/output/luc/checkpoint_model_10.pth after 10 epochs
+Batch 0/195. Loss: 4.988936901092529.  Time elapsed: 0:54:20.358251 
+Batch 50/195. Loss: 4.978557586669922.  Time elapsed: 0:55:37.783871 
+Batch 100/195. Loss: 5.033843040466309.  Time elapsed: 0:56:55.289964 
+Batch 150/195. Loss: 5.029398441314697.  Time elapsed: 0:58:12.821809 
+Epoch 11/100. Total Loss: 5.007451177254701.   Time elapsed: 0:59:21.695343 
+Batch 0/195. Loss: 4.992190837860107.  Time elapsed: 0:59:38.225428 
+Batch 50/195. Loss: 4.963540554046631.  Time elapsed: 1:00:55.633194 
+Batch 100/195. Loss: 5.031455039978027.  Time elapsed: 1:02:13.130368 
+Batch 150/195. Loss: 5.019453048706055.  Time elapsed: 1:03:30.718553 
+Epoch 12/100. Total Loss: 4.998229841085581.   Time elapsed: 1:04:39.764440 
+Batch 0/195. Loss: 5.0384931564331055.  Time elapsed: 1:04:58.747108 
+Batch 50/195. Loss: 4.979134559631348.  Time elapsed: 1:06:16.205398 
+Batch 100/195. Loss: 4.96710729598999.  Time elapsed: 1:07:33.766929 
+Batch 150/195. Loss: 4.9979472160339355.  Time elapsed: 1:08:51.320568 
+Epoch 13/100. Total Loss: 4.9869179285489595.   Time elapsed: 1:10:00.387232 
+Batch 0/195. Loss: 5.0186285972595215.  Time elapsed: 1:10:20.164233 
+Batch 50/195. Loss: 4.924150466918945.  Time elapsed: 1:11:37.428835 
+Batch 100/195. Loss: 5.027458667755127.  Time elapsed: 1:12:54.348653 
+Batch 150/195. Loss: 4.9674482345581055.  Time elapsed: 1:14:11.120588 
+Epoch 14/100. Total Loss: 4.974280469845503.   Time elapsed: 1:15:19.440078 
+Batch 0/195. Loss: 4.987364768981934.  Time elapsed: 1:15:36.596110 
+Batch 50/195. Loss: 5.000574111938477.  Time elapsed: 1:16:53.976700 
+Batch 100/195. Loss: 4.966915607452393.  Time elapsed: 1:18:11.443196 
+Batch 150/195. Loss: 4.950937747955322.  Time elapsed: 1:19:28.892837 
+Epoch 15/100. Total Loss: 4.962501234885973.   Time elapsed: 1:20:37.743018 
+Batch 0/195. Loss: 4.989706516265869.  Time elapsed: 1:20:53.840370 
+Batch 50/195. Loss: 4.933999061584473.  Time elapsed: 1:22:11.217702 
+Batch 100/195. Loss: 5.027707099914551.  Time elapsed: 1:23:28.665275 
+Batch 150/195. Loss: 4.981159687042236.  Time elapsed: 1:24:46.114964 
+Epoch 16/100. Total Loss: 4.95437072851719.   Time elapsed: 1:25:55.050471 
+Batch 0/195. Loss: 4.997963905334473.  Time elapsed: 1:26:13.430813 
+Batch 50/195. Loss: 4.947892189025879.  Time elapsed: 1:27:30.905438 
+Batch 100/195. Loss: 4.949639797210693.  Time elapsed: 1:28:48.511145 
+Batch 150/195. Loss: 4.9416069984436035.  Time elapsed: 1:30:06.128592 
+Epoch 17/100. Total Loss: 4.945660014030261.   Time elapsed: 1:31:15.179778 
+Batch 0/195. Loss: 5.013208866119385.  Time elapsed: 1:31:35.172918 
+Batch 50/195. Loss: 5.025335788726807.  Time elapsed: 1:32:52.623794 
+Batch 100/195. Loss: 4.929608345031738.  Time elapsed: 1:34:10.225785 
+Batch 150/195. Loss: 4.9497880935668945.  Time elapsed: 1:35:27.776521 
+Epoch 18/100. Total Loss: 4.937594076303335.   Time elapsed: 1:36:36.704456 
+Batch 0/195. Loss: 4.918648719787598.  Time elapsed: 1:36:52.578717 
+Batch 50/195. Loss: 4.900251865386963.  Time elapsed: 1:38:09.977257 
+Batch 100/195. Loss: 4.891443729400635.  Time elapsed: 1:39:27.414217 
+Batch 150/195. Loss: 4.908321380615234.  Time elapsed: 1:40:44.895833 
+Epoch 19/100. Total Loss: 4.930278164301163.   Time elapsed: 1:41:53.745449 
+Batch 0/195. Loss: 4.977692127227783.  Time elapsed: 1:42:09.501822 
+Batch 50/195. Loss: 4.954030990600586.  Time elapsed: 1:43:26.907042 
+Batch 100/195. Loss: 4.927799224853516.  Time elapsed: 1:44:44.398934 
+Batch 150/195. Loss: 4.868157386779785.  Time elapsed: 1:46:01.885654 
+Epoch 20/100. Total Loss: 4.927970722394112.   Time elapsed: 1:47:10.907424 
+checkpoint saved at data/output/luc/checkpoint_model_20.pth after 20 epochs
+Batch 0/195. Loss: 4.919827461242676.  Time elapsed: 1:47:30.101201 
+Batch 50/195. Loss: 4.929771900177002.  Time elapsed: 1:48:47.600346 
+Batch 100/195. Loss: 4.910887718200684.  Time elapsed: 1:50:05.186795 
+Batch 150/195. Loss: 4.912766933441162.  Time elapsed: 1:51:22.799142 
+Epoch 21/100. Total Loss: 4.917866083291861.   Time elapsed: 1:52:31.892360 
+Batch 0/195. Loss: 4.925572395324707.  Time elapsed: 1:52:51.258908 
+Batch 50/195. Loss: 4.885287284851074.  Time elapsed: 1:54:08.750081 
+Batch 100/195. Loss: 4.922162055969238.  Time elapsed: 1:55:26.372076 
+Batch 150/195. Loss: 4.942152500152588.  Time elapsed: 1:56:43.982129 
+Epoch 22/100. Total Loss: 4.9137032753381975.   Time elapsed: 1:57:52.937583 
+Batch 0/195. Loss: 4.8729448318481445.  Time elapsed: 1:58:10.115732 
+Batch 50/195. Loss: 4.906096458435059.  Time elapsed: 1:59:27.510804 
+Batch 100/195. Loss: 4.87712287902832.  Time elapsed: 2:00:45.043175 
+Batch 150/195. Loss: 4.846888065338135.  Time elapsed: 2:02:02.543998 
+Epoch 23/100. Total Loss: 4.9091621961349095.   Time elapsed: 2:03:11.427944 
+Batch 0/195. Loss: 4.900319576263428.  Time elapsed: 2:03:27.667384 
+Batch 50/195. Loss: 4.873800277709961.  Time elapsed: 2:04:45.039481 
+Batch 100/195. Loss: 4.8657732009887695.  Time elapsed: 2:06:02.504631 
+Batch 150/195. Loss: 4.918642044067383.  Time elapsed: 2:07:19.960296 
+Epoch 24/100. Total Loss: 4.904289568387545.   Time elapsed: 2:08:28.787850 
+Batch 0/195. Loss: 4.905875205993652.  Time elapsed: 2:08:44.791379 
+Batch 50/195. Loss: 4.868847846984863.  Time elapsed: 2:10:02.201276 
+Batch 100/195. Loss: 4.901947021484375.  Time elapsed: 2:11:19.720692 
+Batch 150/195. Loss: 4.9303507804870605.  Time elapsed: 2:12:37.276900 
+Epoch 25/100. Total Loss: 4.900725751045423.   Time elapsed: 2:13:46.332972 
+Batch 0/195. Loss: 4.901459693908691.  Time elapsed: 2:14:04.856306 
+Batch 50/195. Loss: 4.850152015686035.  Time elapsed: 2:15:22.375282 
+Batch 100/195. Loss: 4.921288013458252.  Time elapsed: 2:16:39.984048 
+Batch 150/195. Loss: 4.900432109832764.  Time elapsed: 2:17:57.585729 
+Epoch 26/100. Total Loss: 4.8915803126799755.   Time elapsed: 2:19:06.663879 
+Batch 0/195. Loss: 4.8771209716796875.  Time elapsed: 2:19:25.113391 
+Batch 50/195. Loss: 4.890410423278809.  Time elapsed: 2:20:42.598032 
+Batch 100/195. Loss: 4.9263482093811035.  Time elapsed: 2:22:00.132458 
+Batch 150/195. Loss: 4.854353904724121.  Time elapsed: 2:23:17.586145 
+Epoch 27/100. Total Loss: 4.887115471179669.   Time elapsed: 2:24:26.393114 
+Batch 0/195. Loss: 4.868285179138184.  Time elapsed: 2:24:42.175854 
+Batch 50/195. Loss: 4.879698753356934.  Time elapsed: 2:25:59.558541 
+Batch 100/195. Loss: 4.941902160644531.  Time elapsed: 2:27:17.129281 
+Batch 150/195. Loss: 4.884472370147705.  Time elapsed: 2:28:34.717805 
+Epoch 28/100. Total Loss: 4.88725418188633.   Time elapsed: 2:29:43.799602 
+Batch 0/195. Loss: 4.8441572189331055.  Time elapsed: 2:30:02.615386 
+Batch 50/195. Loss: 4.897493839263916.  Time elapsed: 2:31:20.084793 
+Batch 100/195. Loss: 4.880953311920166.  Time elapsed: 2:32:37.634004 
+Batch 150/195. Loss: 4.848435401916504.  Time elapsed: 2:33:55.192063 
+Epoch 29/100. Total Loss: 4.8795367436531265.   Time elapsed: 2:35:04.250391 
+Batch 0/195. Loss: 4.9008259773254395.  Time elapsed: 2:35:23.705136 
+Batch 50/195. Loss: 4.879220962524414.  Time elapsed: 2:36:41.135702 
+Batch 100/195. Loss: 4.92607307434082.  Time elapsed: 2:37:58.578638 
+Batch 150/195. Loss: 4.913907527923584.  Time elapsed: 2:39:16.025278 
+Epoch 30/100. Total Loss: 4.884601223774445.   Time elapsed: 2:40:24.845748 
+checkpoint saved at data/output/luc/checkpoint_model_30.pth after 30 epochs
+Batch 0/195. Loss: 4.879521369934082.  Time elapsed: 2:40:41.113355 
+Batch 50/195. Loss: 4.862701416015625.  Time elapsed: 2:41:58.510427 
+Batch 100/195. Loss: 4.8699049949646.  Time elapsed: 2:43:15.978527 
+Batch 150/195. Loss: 4.834159851074219.  Time elapsed: 2:44:33.441546 
+Epoch 31/100. Total Loss: 4.875337126316168.   Time elapsed: 2:45:42.275917 
+Batch 0/195. Loss: 4.861142158508301.  Time elapsed: 2:45:58.604265 
+Batch 50/195. Loss: 4.948296070098877.  Time elapsed: 2:47:15.991440 
+Batch 100/195. Loss: 4.903234481811523.  Time elapsed: 2:48:33.449788 
+Batch 150/195. Loss: 4.884780406951904.  Time elapsed: 2:49:50.895749 
+Epoch 32/100. Total Loss: 4.874081359765468.   Time elapsed: 2:50:59.741223 
+Batch 0/195. Loss: 4.845128059387207.  Time elapsed: 2:51:17.106527 
+Batch 50/195. Loss: 4.8954548835754395.  Time elapsed: 2:52:34.484918 
+Batch 100/195. Loss: 4.864068031311035.  Time elapsed: 2:53:52.038301 
+Batch 150/195. Loss: 4.852372169494629.  Time elapsed: 2:55:09.587700 
+Epoch 33/100. Total Loss: 4.871036392603165.   Time elapsed: 2:56:18.565896 
+Batch 0/195. Loss: 4.9103007316589355.  Time elapsed: 2:56:37.695904 
+Batch 50/195. Loss: 4.8493781089782715.  Time elapsed: 2:57:55.126500 
+Batch 100/195. Loss: 4.81680154800415.  Time elapsed: 2:59:12.688515 
+Batch 150/195. Loss: 4.811911106109619.  Time elapsed: 3:00:30.279427 
+Epoch 34/100. Total Loss: 4.863985719436254.   Time elapsed: 3:01:39.227419 
+Batch 0/195. Loss: 4.8220696449279785.  Time elapsed: 3:01:55.153133 
+Batch 50/195. Loss: 4.885836601257324.  Time elapsed: 3:03:12.500648 
+Batch 100/195. Loss: 4.897645950317383.  Time elapsed: 3:04:29.956734 
+Batch 150/195. Loss: 4.841597557067871.  Time elapsed: 3:05:47.412147 
+Epoch 35/100. Total Loss: 4.863142573527801.   Time elapsed: 3:06:56.218461 
+Batch 0/195. Loss: 4.847190856933594.  Time elapsed: 3:07:12.682847 
+Batch 50/195. Loss: 4.875887393951416.  Time elapsed: 3:08:29.996592 
+Batch 100/195. Loss: 4.893518447875977.  Time elapsed: 3:09:47.401386 
+Batch 150/195. Loss: 4.85089635848999.  Time elapsed: 3:11:04.809242 
+Epoch 36/100. Total Loss: 4.8645506638747.   Time elapsed: 3:12:13.899811 
+Batch 0/195. Loss: 4.853361129760742.  Time elapsed: 3:12:36.195650 
+Batch 50/195. Loss: 4.857484817504883.  Time elapsed: 3:13:53.628879 
+Batch 100/195. Loss: 4.897697448730469.  Time elapsed: 3:15:11.200593 
+Batch 150/195. Loss: 4.87366247177124.  Time elapsed: 3:16:28.784545 
+Epoch 37/100. Total Loss: 4.85814812489045.   Time elapsed: 3:17:37.810480 
+Batch 0/195. Loss: 4.837087154388428.  Time elapsed: 3:17:56.469818 
+Batch 50/195. Loss: 4.831639289855957.  Time elapsed: 3:19:13.976879 
+Batch 100/195. Loss: 4.866326808929443.  Time elapsed: 3:20:31.530874 
+Batch 150/195. Loss: 4.864840030670166.  Time elapsed: 3:21:49.106714 
+Epoch 38/100. Total Loss: 4.856117639786158.   Time elapsed: 3:22:57.942439 
+Batch 0/195. Loss: 4.857052803039551.  Time elapsed: 3:23:13.875195 
+Batch 50/195. Loss: 4.8650994300842285.  Time elapsed: 3:24:31.274836 
+Batch 100/195. Loss: 4.830925941467285.  Time elapsed: 3:25:48.759530 
+Batch 150/195. Loss: 4.853410720825195.  Time elapsed: 3:27:06.331140 
+Epoch 39/100. Total Loss: 4.849805565369435.   Time elapsed: 3:28:15.345431 
+Batch 0/195. Loss: 4.82984733581543.  Time elapsed: 3:28:33.559862 
+Batch 50/195. Loss: 4.794854164123535.  Time elapsed: 3:29:51.006240 
+Batch 100/195. Loss: 4.852941989898682.  Time elapsed: 3:31:08.593623 
+Batch 150/195. Loss: 4.833518981933594.  Time elapsed: 3:32:26.177645 
+Epoch 40/100. Total Loss: 4.844729218116173.   Time elapsed: 3:33:35.205634 
+checkpoint saved at data/output/luc/checkpoint_model_40.pth after 40 epochs
+Batch 0/195. Loss: 4.810355186462402.  Time elapsed: 3:33:54.082630 
+Batch 50/195. Loss: 4.870017051696777.  Time elapsed: 3:35:11.565747 
+Batch 100/195. Loss: 4.86181640625.  Time elapsed: 3:36:29.100723 
+Batch 150/195. Loss: 4.881322860717773.  Time elapsed: 3:37:46.559592 
+Epoch 41/100. Total Loss: 4.850192153148162.   Time elapsed: 3:38:55.395394 
+Batch 0/195. Loss: 4.799360752105713.  Time elapsed: 3:39:11.831763 
+Batch 50/195. Loss: 4.905333518981934.  Time elapsed: 3:40:29.225174 
+Batch 100/195. Loss: 4.886837959289551.  Time elapsed: 3:41:46.781004 
+Batch 150/195. Loss: 4.868673324584961.  Time elapsed: 3:43:04.331976 
+Epoch 42/100. Total Loss: 4.843755350357447.   Time elapsed: 3:44:13.322789 
+Batch 0/195. Loss: 4.88114070892334.  Time elapsed: 3:44:31.600739 
+Batch 50/195. Loss: 4.897425174713135.  Time elapsed: 3:45:49.092344 
+Batch 100/195. Loss: 4.8267822265625.  Time elapsed: 3:47:06.695927 
+Batch 150/195. Loss: 4.830803871154785.  Time elapsed: 3:48:24.314984 
+Epoch 43/100. Total Loss: 4.843612915430313.   Time elapsed: 3:49:33.365038 
+Batch 0/195. Loss: 4.867184638977051.  Time elapsed: 3:49:53.709963 
+Batch 50/195. Loss: 4.895855903625488.  Time elapsed: 3:51:11.093141 
+Batch 100/195. Loss: 4.867537975311279.  Time elapsed: 3:52:28.559704 
+Batch 150/195. Loss: 4.811893463134766.  Time elapsed: 3:53:46.027443 
+Epoch 44/100. Total Loss: 4.842324980711326.   Time elapsed: 3:54:54.843369 
+Batch 0/195. Loss: 4.79947566986084.  Time elapsed: 3:55:11.062494 
+Batch 50/195. Loss: 4.817296981811523.  Time elapsed: 3:56:28.585536 
+Batch 100/195. Loss: 4.836927890777588.  Time elapsed: 3:57:46.186330 
+Batch 150/195. Loss: 4.853734493255615.  Time elapsed: 3:59:03.789121 
+Epoch 45/100. Total Loss: 4.842350482940674.   Time elapsed: 4:00:12.868395 
+Batch 0/195. Loss: 4.878942966461182.  Time elapsed: 4:00:31.025510 
+Batch 50/195. Loss: 4.8808674812316895.  Time elapsed: 4:01:48.474616 
+Batch 100/195. Loss: 4.82804012298584.  Time elapsed: 4:03:06.025425 
+Batch 150/195. Loss: 4.795103549957275.  Time elapsed: 4:04:23.595785 
+Epoch 46/100. Total Loss: 4.837596727028871.   Time elapsed: 4:05:32.614840 
+Batch 0/195. Loss: 4.822909832000732.  Time elapsed: 4:05:51.322711 
+Batch 50/195. Loss: 4.787099361419678.  Time elapsed: 4:07:08.753692 
+Batch 100/195. Loss: 4.871580600738525.  Time elapsed: 4:08:26.226472 
+Batch 150/195. Loss: 4.830259323120117.  Time elapsed: 4:09:43.692986 
+Epoch 47/100. Total Loss: 4.83721034465692.   Time elapsed: 4:10:52.512890 
+Batch 0/195. Loss: 4.8458333015441895.  Time elapsed: 4:11:08.219665 
+Batch 50/195. Loss: 4.795300006866455.  Time elapsed: 4:12:25.732311 
+Batch 100/195. Loss: 4.798890113830566.  Time elapsed: 4:13:43.299893 
+Batch 150/195. Loss: 4.828160285949707.  Time elapsed: 4:15:00.871440 
+Epoch 48/100. Total Loss: 4.8311879989428395.   Time elapsed: 4:16:09.954609 
+Batch 0/195. Loss: 4.849809646606445.  Time elapsed: 4:16:29.104331 
+Batch 50/195. Loss: 4.834813117980957.  Time elapsed: 4:17:46.584227 
+Batch 100/195. Loss: 4.8479084968566895.  Time elapsed: 4:19:04.150481 
+Batch 150/195. Loss: 4.833965301513672.  Time elapsed: 4:20:21.717778 
+Epoch 49/100. Total Loss: 4.832275576469225.   Time elapsed: 4:21:30.783381 
+Batch 0/195. Loss: 4.823727607727051.  Time elapsed: 4:21:48.243285 
+Batch 50/195. Loss: 4.784943103790283.  Time elapsed: 4:23:05.623949 
+Batch 100/195. Loss: 4.823562145233154.  Time elapsed: 4:24:23.365242 
+Batch 150/195. Loss: 4.741389751434326.  Time elapsed: 4:25:41.014753 
+Epoch 50/100. Total Loss: 4.82731718650231.   Time elapsed: 4:26:49.914037 
+checkpoint saved at data/output/luc/checkpoint_model_50.pth after 50 epochs
+Batch 0/195. Loss: 4.791150093078613.  Time elapsed: 4:27:05.846306 
+Batch 50/195. Loss: 4.818604469299316.  Time elapsed: 4:28:23.367823 
+Batch 100/195. Loss: 4.821392059326172.  Time elapsed: 4:29:40.873201 
+Batch 150/195. Loss: 4.839456081390381.  Time elapsed: 4:30:58.341741 
+Epoch 51/100. Total Loss: 4.826548167986748.   Time elapsed: 4:32:07.375906 
+Batch 0/195. Loss: 4.826394081115723.  Time elapsed: 4:32:26.256165 
+Batch 50/195. Loss: 4.833279132843018.  Time elapsed: 4:33:43.759548 
+Batch 100/195. Loss: 4.828372001647949.  Time elapsed: 4:35:01.384764 
+Batch 150/195. Loss: 4.836070537567139.  Time elapsed: 4:36:18.852446 
+Epoch 52/100. Total Loss: 4.830003537887182.   Time elapsed: 4:37:27.736445 
+Batch 0/195. Loss: 4.783350467681885.  Time elapsed: 4:37:44.668993 
+Batch 50/195. Loss: 4.790912628173828.  Time elapsed: 4:39:02.331665 
+Batch 100/195. Loss: 4.820411205291748.  Time elapsed: 4:40:19.931468 
+Batch 150/195. Loss: 4.786008358001709.  Time elapsed: 4:41:37.491202 
+Epoch 53/100. Total Loss: 4.824395424280411.   Time elapsed: 4:42:46.575793 
+Batch 0/195. Loss: 4.835710048675537.  Time elapsed: 4:43:04.926062 
+Batch 50/195. Loss: 4.822463512420654.  Time elapsed: 4:44:22.382865 
+Batch 100/195. Loss: 4.823357582092285.  Time elapsed: 4:45:39.853819 
+Batch 150/195. Loss: 4.822257995605469.  Time elapsed: 4:46:57.345302 
+Epoch 54/100. Total Loss: 4.820023751870179.   Time elapsed: 4:48:06.279575 
+Batch 0/195. Loss: 4.807663917541504.  Time elapsed: 4:48:23.243480 
+Batch 50/195. Loss: 4.808091163635254.  Time elapsed: 4:49:40.609819 
+Batch 100/195. Loss: 4.798800945281982.  Time elapsed: 4:50:58.040696 
+Batch 150/195. Loss: 4.8377485275268555.  Time elapsed: 4:52:15.462974 
+Epoch 55/100. Total Loss: 4.820235232817821.   Time elapsed: 4:53:24.280781 
+Batch 0/195. Loss: 4.794756889343262.  Time elapsed: 4:53:40.327251 
+Batch 50/195. Loss: 4.797535419464111.  Time elapsed: 4:54:57.723957 
+Batch 100/195. Loss: 4.805881500244141.  Time elapsed: 4:56:15.270527 
+Batch 150/195. Loss: 4.8208842277526855.  Time elapsed: 4:57:32.817801 
+Epoch 56/100. Total Loss: 4.815250313587677.   Time elapsed: 4:58:41.842627 
+Batch 0/195. Loss: 4.765428066253662.  Time elapsed: 4:59:00.350125 
+Batch 50/195. Loss: 4.798232078552246.  Time elapsed: 5:00:17.798937 
+Batch 100/195. Loss: 4.8339667320251465.  Time elapsed: 5:01:35.375529 
+Batch 150/195. Loss: 4.82053279876709.  Time elapsed: 5:02:52.926090 
+Epoch 57/100. Total Loss: 4.813921769460042.   Time elapsed: 5:04:02.010114 
+Batch 0/195. Loss: 4.835744857788086.  Time elapsed: 5:04:21.442188 
+Batch 50/195. Loss: 4.812160491943359.  Time elapsed: 5:05:38.847877 
+Batch 100/195. Loss: 4.7714948654174805.  Time elapsed: 5:06:56.325065 
+Batch 150/195. Loss: 4.79421854019165.  Time elapsed: 5:08:13.786521 
+Epoch 58/100. Total Loss: 4.813841303800925.   Time elapsed: 5:09:22.649232 
+Batch 0/195. Loss: 4.8412861824035645.  Time elapsed: 5:09:39.154556 
+Batch 50/195. Loss: 4.809230804443359.  Time elapsed: 5:10:56.601026 
+Batch 100/195. Loss: 4.8155975341796875.  Time elapsed: 5:12:14.182396 
+Batch 150/195. Loss: 4.757200241088867.  Time elapsed: 5:13:31.753879 
+Epoch 59/100. Total Loss: 4.813862541394356.   Time elapsed: 5:14:40.810534 
+Batch 0/195. Loss: 4.78325080871582.  Time elapsed: 5:14:59.269844 
+Batch 50/195. Loss: 4.774769306182861.  Time elapsed: 5:16:16.761010 
+Batch 100/195. Loss: 4.786259174346924.  Time elapsed: 5:17:34.302692 
+Batch 150/195. Loss: 4.8028178215026855.  Time elapsed: 5:18:51.845643 
+Epoch 60/100. Total Loss: 4.811164574745374.   Time elapsed: 5:20:00.868370 
+checkpoint saved at data/output/luc/checkpoint_model_60.pth after 60 epochs
+Batch 0/195. Loss: 4.801211357116699.  Time elapsed: 5:20:20.078644 
+Batch 50/195. Loss: 4.764501571655273.  Time elapsed: 5:21:37.592498 
+Batch 100/195. Loss: 4.843291282653809.  Time elapsed: 5:22:55.088868 
+Batch 150/195. Loss: 4.7700886726379395.  Time elapsed: 5:24:12.555059 
+Epoch 61/100. Total Loss: 4.807329349028758.   Time elapsed: 5:25:21.446267 
+Batch 0/195. Loss: 4.786409378051758.  Time elapsed: 5:25:37.446979 
+Batch 50/195. Loss: 4.769552230834961.  Time elapsed: 5:26:54.910724 
+Batch 100/195. Loss: 4.835023880004883.  Time elapsed: 5:28:12.492121 
+Batch 150/195. Loss: 4.848755359649658.  Time elapsed: 5:29:30.062070 
+Epoch 62/100. Total Loss: 4.810487387730525.   Time elapsed: 5:30:39.107896 
+Batch 0/195. Loss: 4.798170566558838.  Time elapsed: 5:30:59.358467 
+Batch 50/195. Loss: 4.732161521911621.  Time elapsed: 5:32:16.736141 
+Batch 100/195. Loss: 4.794794082641602.  Time elapsed: 5:33:34.217187 
+Batch 150/195. Loss: 4.8131232261657715.  Time elapsed: 5:34:51.760517 
+Epoch 63/100. Total Loss: 4.804327903649746.   Time elapsed: 5:36:00.821103 
+Batch 0/195. Loss: 4.774658203125.  Time elapsed: 5:36:18.867399 
+Batch 50/195. Loss: 4.81589937210083.  Time elapsed: 5:37:36.306496 
+Batch 100/195. Loss: 4.8355536460876465.  Time elapsed: 5:38:53.789935 
+Batch 150/195. Loss: 4.762395858764648.  Time elapsed: 5:40:11.325664 
+Epoch 64/100. Total Loss: 4.802982088235709.   Time elapsed: 5:41:20.508693 
+Batch 0/195. Loss: 4.8173980712890625.  Time elapsed: 5:41:39.504048 
+Batch 50/195. Loss: 4.753735065460205.  Time elapsed: 5:42:56.989718 
+Batch 100/195. Loss: 4.7932024002075195.  Time elapsed: 5:44:14.515943 
+Batch 150/195. Loss: 4.824452877044678.  Time elapsed: 5:45:32.043433 
+Epoch 65/100. Total Loss: 4.805656474675888.   Time elapsed: 5:46:41.234566 
+Batch 0/195. Loss: 4.815968990325928.  Time elapsed: 5:46:58.796738 
+Batch 50/195. Loss: 4.835453987121582.  Time elapsed: 5:48:16.255745 
+Batch 100/195. Loss: 4.816314220428467.  Time elapsed: 5:49:33.798964 
+Batch 150/195. Loss: 4.787309646606445.  Time elapsed: 5:50:51.259994 
+Epoch 66/100. Total Loss: 4.800608427096636.   Time elapsed: 5:52:00.046007 
+Batch 0/195. Loss: 4.806379318237305.  Time elapsed: 5:52:16.075375 
+Batch 50/195. Loss: 4.794256687164307.  Time elapsed: 5:53:33.438371 
+Batch 100/195. Loss: 4.897523403167725.  Time elapsed: 5:54:50.966234 
+Batch 150/195. Loss: 4.836395740509033.  Time elapsed: 5:56:08.475322 
+Epoch 67/100. Total Loss: 4.80143654407599.   Time elapsed: 5:57:17.486186 
+Batch 0/195. Loss: 4.828022003173828.  Time elapsed: 5:57:35.818373 
+Batch 50/195. Loss: 4.806131839752197.  Time elapsed: 5:58:53.262705 
+Batch 100/195. Loss: 4.77733850479126.  Time elapsed: 6:00:10.814803 
+Batch 150/195. Loss: 4.7814249992370605.  Time elapsed: 6:01:28.338194 
+Epoch 68/100. Total Loss: 4.79803733092088.   Time elapsed: 6:02:37.372492 
+Batch 0/195. Loss: 4.746417045593262.  Time elapsed: 6:02:55.795948 
+Batch 50/195. Loss: 4.789282321929932.  Time elapsed: 6:04:13.265120 
+Batch 100/195. Loss: 4.8194580078125.  Time elapsed: 6:05:30.807650 
+Batch 150/195. Loss: 4.787757396697998.  Time elapsed: 6:06:48.351913 
+Epoch 69/100. Total Loss: 4.794768834725405.   Time elapsed: 6:08:00.587854 
+Batch 0/195. Loss: 4.7959184646606445.  Time elapsed: 6:08:16.606400 
+Batch 50/195. Loss: 4.811832904815674.  Time elapsed: 6:09:34.037913 
+Batch 100/195. Loss: 4.813621997833252.  Time elapsed: 6:10:51.492435 
+Batch 150/195. Loss: 4.808267593383789.  Time elapsed: 6:12:09.015539 
+Epoch 70/100. Total Loss: 4.79919064839681.   Time elapsed: 6:13:17.868984 
+checkpoint saved at data/output/luc/checkpoint_model_70.pth after 70 epochs
+Batch 0/195. Loss: 4.783547401428223.  Time elapsed: 6:13:34.465660 
+Batch 50/195. Loss: 4.805647850036621.  Time elapsed: 6:14:51.778541 
+Batch 100/195. Loss: 4.755936145782471.  Time elapsed: 6:16:09.170916 
+Batch 150/195. Loss: 4.794432163238525.  Time elapsed: 6:17:26.557916 
+Epoch 71/100. Total Loss: 4.794680905953432.   Time elapsed: 6:18:35.327014 
+Batch 0/195. Loss: 4.784356117248535.  Time elapsed: 6:18:51.175239 
+Batch 50/195. Loss: 4.796577453613281.  Time elapsed: 6:20:08.534740 
+Batch 100/195. Loss: 4.786845684051514.  Time elapsed: 6:21:25.991733 
+Batch 150/195. Loss: 4.801255702972412.  Time elapsed: 6:22:43.445488 
+Epoch 72/100. Total Loss: 4.793171190604186.   Time elapsed: 6:23:52.299509 
+Batch 0/195. Loss: 4.797703742980957.  Time elapsed: 6:24:08.173140 
+Batch 50/195. Loss: 4.812895774841309.  Time elapsed: 6:25:25.566692 
+Batch 100/195. Loss: 4.821300506591797.  Time elapsed: 6:26:43.027358 
+Batch 150/195. Loss: 4.801190376281738.  Time elapsed: 6:28:00.500114 
+Epoch 73/100. Total Loss: 4.7980712523827185.   Time elapsed: 6:29:09.349191 
+Batch 0/195. Loss: 4.825401306152344.  Time elapsed: 6:29:25.078364 
+Batch 50/195. Loss: 4.79725980758667.  Time elapsed: 6:30:42.414442 
+Batch 100/195. Loss: 4.765676975250244.  Time elapsed: 6:31:59.865227 
+Batch 150/195. Loss: 4.827705383300781.  Time elapsed: 6:33:17.294143 
+Epoch 74/100. Total Loss: 4.790394020080567.   Time elapsed: 6:34:26.102832 
+Batch 0/195. Loss: 4.791675090789795.  Time elapsed: 6:34:41.892696 
+Batch 50/195. Loss: 4.776164531707764.  Time elapsed: 6:35:59.251837 
+Batch 100/195. Loss: 4.76790189743042.  Time elapsed: 6:37:16.712683 
+Batch 150/195. Loss: 4.823700428009033.  Time elapsed: 6:38:34.157872 
+Epoch 75/100. Total Loss: 4.7882484949552095.   Time elapsed: 6:39:43.031889 
+Batch 0/195. Loss: 4.815993309020996.  Time elapsed: 6:39:59.418423 
+Batch 50/195. Loss: 4.790104866027832.  Time elapsed: 6:41:16.747084 
+Batch 100/195. Loss: 4.765346527099609.  Time elapsed: 6:42:34.144637 
+Batch 150/195. Loss: 4.768158435821533.  Time elapsed: 6:43:51.622806 
+Epoch 76/100. Total Loss: 4.791870750525059.   Time elapsed: 6:45:00.666816 
+Batch 0/195. Loss: 4.776817321777344.  Time elapsed: 6:45:19.038066 
+Batch 50/195. Loss: 4.803768634796143.  Time elapsed: 6:46:36.512015 
+Batch 100/195. Loss: 4.7971014976501465.  Time elapsed: 6:47:54.115893 
+Batch 150/195. Loss: 4.8146538734436035.  Time elapsed: 6:49:11.698239 
+Epoch 77/100. Total Loss: 4.787874930944199.   Time elapsed: 6:50:20.777848 
+Batch 0/195. Loss: 4.767123222351074.  Time elapsed: 6:50:39.830371 
+Batch 50/195. Loss: 4.7352776527404785.  Time elapsed: 6:51:57.400688 
+Batch 100/195. Loss: 4.781795501708984.  Time elapsed: 6:53:15.037680 
+Batch 150/195. Loss: 4.772009372711182.  Time elapsed: 6:54:32.522335 
+Epoch 78/100. Total Loss: 4.785913834205041.   Time elapsed: 6:55:41.443498 
+Batch 0/195. Loss: 4.781210422515869.  Time elapsed: 6:55:57.809115 
+Batch 50/195. Loss: 4.825165271759033.  Time elapsed: 6:57:15.206146 
+Batch 100/195. Loss: 4.740989685058594.  Time elapsed: 6:58:32.702100 
+Batch 150/195. Loss: 4.761109828948975.  Time elapsed: 6:59:50.216893 
+Epoch 79/100. Total Loss: 4.784880828857422.   Time elapsed: 7:00:59.090716 
+Batch 0/195. Loss: 4.786656379699707.  Time elapsed: 7:01:15.104810 
+Batch 50/195. Loss: 4.749110221862793.  Time elapsed: 7:02:32.467115 
+Batch 100/195. Loss: 4.735030651092529.  Time elapsed: 7:03:49.927495 
+Batch 150/195. Loss: 4.776755332946777.  Time elapsed: 7:05:07.390297 
+Epoch 80/100. Total Loss: 4.785847443800706.   Time elapsed: 7:06:16.339665 
+checkpoint saved at data/output/luc/checkpoint_model_80.pth after 80 epochs
+Batch 0/195. Loss: 4.790534973144531.  Time elapsed: 7:06:35.582323 
+Batch 50/195. Loss: 4.764438152313232.  Time elapsed: 7:07:53.081584 
+Batch 100/195. Loss: 4.7975687980651855.  Time elapsed: 7:09:10.694673 
+Batch 150/195. Loss: 4.765759468078613.  Time elapsed: 7:10:28.319070 
+Epoch 81/100. Total Loss: 4.782795725113306.   Time elapsed: 7:11:37.470398 
+Batch 0/195. Loss: 4.809403419494629.  Time elapsed: 7:11:56.005624 
+Batch 50/195. Loss: 4.798187732696533.  Time elapsed: 7:13:13.499365 
+Batch 100/195. Loss: 4.772505760192871.  Time elapsed: 7:14:31.102603 
+Batch 150/195. Loss: 4.769689559936523.  Time elapsed: 7:15:48.679202 
+Epoch 82/100. Total Loss: 4.781749752240303.   Time elapsed: 7:16:57.654080 
+Batch 0/195. Loss: 4.768296718597412.  Time elapsed: 7:17:13.574820 
+Batch 50/195. Loss: 4.776085376739502.  Time elapsed: 7:18:30.906507 
+Batch 100/195. Loss: 4.767771244049072.  Time elapsed: 7:19:48.324676 
+Batch 150/195. Loss: 4.795162677764893.  Time elapsed: 7:21:05.698957 
+Epoch 83/100. Total Loss: 4.7787124022459375.   Time elapsed: 7:22:14.470381 
+Batch 0/195. Loss: 4.8052239418029785.  Time elapsed: 7:22:30.155912 
+Batch 50/195. Loss: 4.748247146606445.  Time elapsed: 7:23:47.449516 
+Batch 100/195. Loss: 4.7967305183410645.  Time elapsed: 7:25:04.847127 
+Batch 150/195. Loss: 4.775384902954102.  Time elapsed: 7:26:22.317049 
+Epoch 84/100. Total Loss: 4.780026609469683.   Time elapsed: 7:27:31.313205 
+Batch 0/195. Loss: 4.764595985412598.  Time elapsed: 7:27:49.592180 
+Batch 50/195. Loss: 4.788963317871094.  Time elapsed: 7:29:07.014773 
+Batch 100/195. Loss: 4.783904552459717.  Time elapsed: 7:30:24.570092 
+Batch 150/195. Loss: 4.791779518127441.  Time elapsed: 7:31:42.080266 
+Epoch 85/100. Total Loss: 4.778993362035507.   Time elapsed: 7:32:51.160121 
+Batch 0/195. Loss: 4.839326858520508.  Time elapsed: 7:33:10.336912 
+Batch 50/195. Loss: 4.861105918884277.  Time elapsed: 7:34:27.734699 
+Batch 100/195. Loss: 4.8064703941345215.  Time elapsed: 7:35:45.360965 
+Batch 150/195. Loss: 4.805455684661865.  Time elapsed: 7:37:02.793849 
+Epoch 86/100. Total Loss: 4.777501147832626.   Time elapsed: 7:38:11.608784 
+Batch 0/195. Loss: 4.795073986053467.  Time elapsed: 7:38:27.245120 
+Batch 50/195. Loss: 4.824923992156982.  Time elapsed: 7:39:44.591896 
+Batch 100/195. Loss: 4.7765727043151855.  Time elapsed: 7:41:02.022151 
+Batch 150/195. Loss: 4.776042938232422.  Time elapsed: 7:42:19.506301 
+Epoch 87/100. Total Loss: 4.777849952991192.   Time elapsed: 7:43:28.513794 
+Batch 0/195. Loss: 4.761188983917236.  Time elapsed: 7:43:50.661860 
+Batch 50/195. Loss: 4.800705909729004.  Time elapsed: 7:45:08.063241 
+Batch 100/195. Loss: 4.771448612213135.  Time elapsed: 7:46:25.611120 
+Batch 150/195. Loss: 4.798303127288818.  Time elapsed: 7:47:43.170157 
+Epoch 88/100. Total Loss: 4.775486175830547.   Time elapsed: 7:48:52.204440 
+Batch 0/195. Loss: 4.742845058441162.  Time elapsed: 7:49:10.603501 
+Batch 50/195. Loss: 4.798821449279785.  Time elapsed: 7:50:28.085286 
+Batch 100/195. Loss: 4.739058971405029.  Time elapsed: 7:51:45.753858 
+Batch 150/195. Loss: 4.766241550445557.  Time elapsed: 7:53:03.275066 
+Epoch 89/100. Total Loss: 4.776498048733442.   Time elapsed: 7:54:12.158256 
+Batch 0/195. Loss: 4.783908367156982.  Time elapsed: 7:54:28.024989 
+Batch 50/195. Loss: 4.757462501525879.  Time elapsed: 7:55:45.378229 
+Batch 100/195. Loss: 4.7610554695129395.  Time elapsed: 7:57:02.811745 
+Batch 150/195. Loss: 4.80226469039917.  Time elapsed: 7:58:20.255467 
+Epoch 90/100. Total Loss: 4.778950595855713.   Time elapsed: 7:59:29.117023 
+checkpoint saved at data/output/luc/checkpoint_model_90.pth after 90 epochs
+Batch 0/195. Loss: 4.786344528198242.  Time elapsed: 7:59:44.939981 
+Batch 50/195. Loss: 4.756494998931885.  Time elapsed: 8:01:02.248184 
+Batch 100/195. Loss: 4.7951130867004395.  Time elapsed: 8:02:19.651085 
+Batch 150/195. Loss: 4.800814151763916.  Time elapsed: 8:03:37.059114 
+Epoch 91/100. Total Loss: 4.772757231883514.   Time elapsed: 8:04:45.841477 
+Batch 0/195. Loss: 4.753808975219727.  Time elapsed: 8:05:01.607461 
+Batch 50/195. Loss: 4.800191402435303.  Time elapsed: 8:06:19.015997 
+Batch 100/195. Loss: 4.749264717102051.  Time elapsed: 8:07:36.603093 
+Batch 150/195. Loss: 4.767867565155029.  Time elapsed: 8:08:54.231930 
+Epoch 92/100. Total Loss: 4.772080683096862.   Time elapsed: 8:10:03.360661 
+Batch 0/195. Loss: 4.824572563171387.  Time elapsed: 8:10:23.909138 
+Batch 50/195. Loss: 4.771549701690674.  Time elapsed: 8:11:41.374814 
+Batch 100/195. Loss: 4.790782451629639.  Time elapsed: 8:12:59.063547 
+Batch 150/195. Loss: 4.799679756164551.  Time elapsed: 8:14:16.687968 
+Epoch 93/100. Total Loss: 4.771116572159987.   Time elapsed: 8:15:25.837425 
+Batch 0/195. Loss: 4.76245641708374.  Time elapsed: 8:15:45.175376 
+Batch 50/195. Loss: 4.77786922454834.  Time elapsed: 8:17:02.620624 
+Batch 100/195. Loss: 4.751726150512695.  Time elapsed: 8:18:20.083740 
+Batch 150/195. Loss: 4.802643299102783.  Time elapsed: 8:19:37.538740 
+Epoch 94/100. Total Loss: 4.772074799659925.   Time elapsed: 8:20:46.359508 
+Batch 0/195. Loss: 4.722314357757568.  Time elapsed: 8:21:02.278768 
+Batch 50/195. Loss: 4.80303430557251.  Time elapsed: 8:22:19.649079 
+Batch 100/195. Loss: 4.738124847412109.  Time elapsed: 8:23:37.099802 
+Batch 150/195. Loss: 4.7995734214782715.  Time elapsed: 8:24:54.554818 
+Epoch 95/100. Total Loss: 4.7687102978046125.   Time elapsed: 8:26:03.547891 
+Batch 0/195. Loss: 4.785366535186768.  Time elapsed: 8:26:23.346854 
+Batch 50/195. Loss: 4.758827209472656.  Time elapsed: 8:27:40.824352 
+Batch 100/195. Loss: 4.742241859436035.  Time elapsed: 8:28:58.492718 
+Batch 150/195. Loss: 4.787865161895752.  Time elapsed: 8:30:15.986485 
+Epoch 96/100. Total Loss: 4.766085566007174.   Time elapsed: 8:31:24.872339 
+Batch 0/195. Loss: 4.763752460479736.  Time elapsed: 8:31:40.433237 
+Batch 50/195. Loss: 4.818982124328613.  Time elapsed: 8:32:57.862047 
+Batch 100/195. Loss: 4.7526960372924805.  Time elapsed: 8:34:15.391901 
+Batch 150/195. Loss: 4.819491863250732.  Time elapsed: 8:35:32.904910 
+Epoch 97/100. Total Loss: 4.768372790018717.   Time elapsed: 8:36:41.801678 
+Batch 0/195. Loss: 4.756008625030518.  Time elapsed: 8:36:58.015222 
+Batch 50/195. Loss: 4.745620250701904.  Time elapsed: 8:38:15.420424 
+Batch 100/195. Loss: 4.776054382324219.  Time elapsed: 8:39:32.905985 
+Batch 150/195. Loss: 4.776529312133789.  Time elapsed: 8:40:50.361454 
+Epoch 98/100. Total Loss: 4.7676735657912035.   Time elapsed: 8:41:59.237940 
+Batch 0/195. Loss: 4.803470134735107.  Time elapsed: 8:42:15.181936 
+Batch 50/195. Loss: 4.7654619216918945.  Time elapsed: 8:43:32.554038 
+Batch 100/195. Loss: 4.765760898590088.  Time elapsed: 8:44:50.144520 
+Batch 150/195. Loss: 4.76365852355957.  Time elapsed: 8:46:07.787386 
+Epoch 99/100. Total Loss: 4.768461136940198.   Time elapsed: 8:47:16.892029 
+Batch 0/195. Loss: 4.8038177490234375.  Time elapsed: 8:47:36.081221 
+Batch 50/195. Loss: 4.774813175201416.  Time elapsed: 8:48:53.618191 
+Batch 100/195. Loss: 4.7440266609191895.  Time elapsed: 8:50:11.272681 
+Batch 150/195. Loss: 4.741305828094482.  Time elapsed: 8:51:28.839964 
+Epoch 100/100. Total Loss: 4.763319780887701.   Time elapsed: 8:52:37.943648 
+checkpoint saved at data/output/luc/checkpoint_model_100.pth after 100 epochs
+Total training time 8:52:38.058308
+Took 8:52:40.110885 time to load data!
+Testing SSL Model on CIFAR10.................
+Epoch [1/100]	 Loss: 0.8085398039814219	 Accuracy: 0.7426346009036144
+Epoch [1/100] 	 Validation accuracy 0.5917467948717948
+Best accuracy achieved so far: 0.5917467948717948
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 1 epochs
+Epoch [2/100]	 Loss: 0.6031583615814347	 Accuracy: 0.7872035015060241
+Epoch [2/100] 	 Validation accuracy 0.5985576923076923
+Best accuracy achieved so far: 0.5985576923076923
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 2 epochs
+Epoch [3/100]	 Loss: 0.57363679892866	 Accuracy: 0.7965455572289156
+Epoch [3/100] 	 Validation accuracy 0.6035657051282052
+Best accuracy achieved so far: 0.6035657051282052
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 3 epochs
+Epoch [4/100]	 Loss: 0.557368598541761	 Accuracy: 0.8016754518072289
+Epoch [4/100] 	 Validation accuracy 0.60546875
+Best accuracy achieved so far: 0.60546875
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 4 epochs
+Epoch [5/100]	 Loss: 0.5470239107598023	 Accuracy: 0.8047580948795181
+Epoch [5/100] 	 Validation accuracy 0.6105769230769231
+Best accuracy achieved so far: 0.6105769230769231
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 5 epochs
+Epoch [6/100]	 Loss: 0.5384301504636385	 Accuracy: 0.8087114081325302
+Epoch [6/100] 	 Validation accuracy 0.6098758012820513
+Epoch [7/100]	 Loss: 0.5313324332686074	 Accuracy: 0.8108292545180723
+Epoch [7/100] 	 Validation accuracy 0.612479967948718
+Best accuracy achieved so far: 0.612479967948718
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 7 epochs
+Epoch [8/100]	 Loss: 0.5258952523301165	 Accuracy: 0.8132294804216867
+Epoch [8/100] 	 Validation accuracy 0.612479967948718
+Epoch [9/100]	 Loss: 0.5216031613120113	 Accuracy: 0.8140766189759037
+Epoch [9/100] 	 Validation accuracy 0.61328125
+Best accuracy achieved so far: 0.61328125
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 9 epochs
+Epoch [10/100]	 Loss: 0.5169989917741482	 Accuracy: 0.8157944277108434
+Epoch [10/100] 	 Validation accuracy 0.6141826923076923
+Best accuracy achieved so far: 0.6141826923076923
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 10 epochs
+Epoch [11/100]	 Loss: 0.5130166432494858	 Accuracy: 0.8179122740963856
+Epoch [11/100] 	 Validation accuracy 0.616386217948718
+Best accuracy achieved so far: 0.616386217948718
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 11 epochs
+Epoch [12/100]	 Loss: 0.5096689833619867	 Accuracy: 0.8186182228915663
+Epoch [12/100] 	 Validation accuracy 0.6171875
+Best accuracy achieved so far: 0.6171875
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 12 epochs
+Epoch [13/100]	 Loss: 0.5058405970234469	 Accuracy: 0.8195594879518072
+Epoch [13/100] 	 Validation accuracy 0.6160857371794872
+Epoch [14/100]	 Loss: 0.5031225805630885	 Accuracy: 0.8209713855421686
+Epoch [14/100] 	 Validation accuracy 0.6180889423076923
+Best accuracy achieved so far: 0.6180889423076923
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 14 epochs
+Epoch [15/100]	 Loss: 0.5004946865500456	 Accuracy: 0.821277296686747
+Epoch [15/100] 	 Validation accuracy 0.6147836538461539
+Epoch [16/100]	 Loss: 0.4986368755933391	 Accuracy: 0.8216067394578314
+Epoch [16/100] 	 Validation accuracy 0.6166866987179487
+Epoch [17/100]	 Loss: 0.49505706995456333	 Accuracy: 0.8235833960843374
+Epoch [17/100] 	 Validation accuracy 0.6188902243589743
+Best accuracy achieved so far: 0.6188902243589743
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 17 epochs
+Epoch [18/100]	 Loss: 0.49274758590632173	 Accuracy: 0.8237245858433735
+Epoch [18/100] 	 Validation accuracy 0.6147836538461539
+Epoch [19/100]	 Loss: 0.49128850688596803	 Accuracy: 0.8244540662650602
+Epoch [19/100] 	 Validation accuracy 0.6189903846153846
+Best accuracy achieved so far: 0.6189903846153846
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 19 epochs
+Epoch [20/100]	 Loss: 0.4893899194626923	 Accuracy: 0.8251364834337349
+Epoch [20/100] 	 Validation accuracy 0.6200921474358975
+Best accuracy achieved so far: 0.6200921474358975
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 20 epochs
+Epoch [21/100]	 Loss: 0.48709229790571945	 Accuracy: 0.8266189759036144
+Epoch [21/100] 	 Validation accuracy 0.6180889423076923
+Epoch [22/100]	 Loss: 0.48565842507474394	 Accuracy: 0.8269013554216867
+Epoch [22/100] 	 Validation accuracy 0.616386217948718
+Epoch [23/100]	 Loss: 0.483964079901217	 Accuracy: 0.8267601656626506
+Epoch [23/100] 	 Validation accuracy 0.6199919871794872
+Epoch [24/100]	 Loss: 0.4819037293544017	 Accuracy: 0.8283367846385542
+Epoch [24/100] 	 Validation accuracy 0.6200921474358975
+Epoch [25/100]	 Loss: 0.48047962829650165	 Accuracy: 0.8288309487951807
+Epoch [25/100] 	 Validation accuracy 0.6215945512820513
+Best accuracy achieved so far: 0.6215945512820513
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 25 epochs
+Epoch [26/100]	 Loss: 0.4791675073330302	 Accuracy: 0.8293015813253012
+Epoch [26/100] 	 Validation accuracy 0.6198918269230769
+Epoch [27/100]	 Loss: 0.4780332723250949	 Accuracy: 0.8297957454819277
+Epoch [27/100] 	 Validation accuracy 0.621895032051282
+Best accuracy achieved so far: 0.621895032051282
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 27 epochs
+Epoch [28/100]	 Loss: 0.4761667682015034	 Accuracy: 0.8309487951807228
+Epoch [28/100] 	 Validation accuracy 0.621895032051282
+Epoch [29/100]	 Loss: 0.4742799716586449	 Accuracy: 0.831066453313253
+Epoch [29/100] 	 Validation accuracy 0.6201923076923077
+Epoch [30/100]	 Loss: 0.47349622493318044	 Accuracy: 0.8311841114457831
+Epoch [30/100] 	 Validation accuracy 0.6203926282051282
+Epoch [31/100]	 Loss: 0.47236064363674946	 Accuracy: 0.8312547063253012
+Epoch [31/100] 	 Validation accuracy 0.6214943910256411
+Epoch [32/100]	 Loss: 0.4709144782005663	 Accuracy: 0.8325489457831325
+Epoch [32/100] 	 Validation accuracy 0.6214943910256411
+Epoch [33/100]	 Loss: 0.4704091947480857	 Accuracy: 0.8319841867469879
+Epoch [33/100] 	 Validation accuracy 0.6239983974358975
+Best accuracy achieved so far: 0.6239983974358975
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 33 epochs
+Epoch [34/100]	 Loss: 0.4688941843538399	 Accuracy: 0.8325489457831325
+Epoch [34/100] 	 Validation accuracy 0.6224959935897436
+Epoch [35/100]	 Loss: 0.4681346240756382	 Accuracy: 0.8324312876506024
+Epoch [35/100] 	 Validation accuracy 0.6235977564102564
+Epoch [36/100]	 Loss: 0.46697469098291483	 Accuracy: 0.8335372740963856
+Epoch [36/100] 	 Validation accuracy 0.6238982371794872
+Epoch [37/100]	 Loss: 0.46612209925450476	 Accuracy: 0.8346432605421686
+Epoch [37/100] 	 Validation accuracy 0.6244991987179487
+Best accuracy achieved so far: 0.6244991987179487
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 37 epochs
+Epoch [38/100]	 Loss: 0.46526340799159316	 Accuracy: 0.8337961219879518
+Epoch [38/100] 	 Validation accuracy 0.6240985576923077
+Epoch [39/100]	 Loss: 0.46380055484821997	 Accuracy: 0.8344314759036144
+Epoch [39/100] 	 Validation accuracy 0.6246995192307693
+Best accuracy achieved so far: 0.6246995192307693
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 39 epochs
+Epoch [40/100]	 Loss: 0.4629860248820609	 Accuracy: 0.8337961219879518
+Epoch [40/100] 	 Validation accuracy 0.624198717948718
+Epoch [41/100]	 Loss: 0.4620394650622305	 Accuracy: 0.8356786521084337
+Epoch [41/100] 	 Validation accuracy 0.6248998397435898
+Best accuracy achieved so far: 0.6248998397435898
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 41 epochs
+Epoch [42/100]	 Loss: 0.46041547538465766	 Accuracy: 0.8352315512048193
+Epoch [42/100] 	 Validation accuracy 0.6245993589743589
+Epoch [43/100]	 Loss: 0.46069966335163776	 Accuracy: 0.8357492469879518
+Epoch [43/100] 	 Validation accuracy 0.6235977564102564
+Epoch [44/100]	 Loss: 0.459480815757829	 Accuracy: 0.8359845632530121
+Epoch [44/100] 	 Validation accuracy 0.6230969551282052
+Epoch [45/100]	 Loss: 0.45902444707252177	 Accuracy: 0.8360786897590361
+Epoch [45/100] 	 Validation accuracy 0.6233974358974359
+Epoch [46/100]	 Loss: 0.45831511636455374	 Accuracy: 0.8368317018072289
+Epoch [46/100] 	 Validation accuracy 0.6237980769230769
+Epoch [47/100]	 Loss: 0.4573831940182002	 Accuracy: 0.8351609563253012
+Epoch [47/100] 	 Validation accuracy 0.6244991987179487
+Epoch [48/100]	 Loss: 0.4570609416633126	 Accuracy: 0.836902296686747
+Epoch [48/100] 	 Validation accuracy 0.6236979166666666
+Epoch [49/100]	 Loss: 0.45592743221176674	 Accuracy: 0.8368317018072289
+Epoch [49/100] 	 Validation accuracy 0.6257011217948718
+Best accuracy achieved so far: 0.6257011217948718
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 49 epochs
+Epoch [50/100]	 Loss: 0.4554135280111468	 Accuracy: 0.8372788027108434
+Epoch [50/100] 	 Validation accuracy 0.6248998397435898
+Epoch [51/100]	 Loss: 0.4541810502309397	 Accuracy: 0.8377259036144579
+Epoch [51/100] 	 Validation accuracy 0.6251001602564102
+Epoch [52/100]	 Loss: 0.45430303205657435	 Accuracy: 0.8381494728915663
+Epoch [52/100] 	 Validation accuracy 0.6240985576923077
+Epoch [53/100]	 Loss: 0.45350250431213035	 Accuracy: 0.8382435993975904
+Epoch [53/100] 	 Validation accuracy 0.6255008012820513
+Epoch [54/100]	 Loss: 0.45265310760363037	 Accuracy: 0.8379612198795181
+Epoch [54/100] 	 Validation accuracy 0.6261017628205128
+Best accuracy achieved so far: 0.6261017628205128
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 54 epochs
+Epoch [55/100]	 Loss: 0.4522195051996464	 Accuracy: 0.8384318524096386
+Epoch [55/100] 	 Validation accuracy 0.6265024038461539
+Best accuracy achieved so far: 0.6265024038461539
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 55 epochs
+Epoch [56/100]	 Loss: 0.45150347704808397	 Accuracy: 0.8384083207831325
+Epoch [56/100] 	 Validation accuracy 0.6259014423076923
+Epoch [57/100]	 Loss: 0.45071680067353936	 Accuracy: 0.8390672063253012
+Epoch [57/100] 	 Validation accuracy 0.6260016025641025
+Epoch [58/100]	 Loss: 0.44992853795368987	 Accuracy: 0.8389966114457831
+Epoch [58/100] 	 Validation accuracy 0.6255008012820513
+Epoch [59/100]	 Loss: 0.4494711695216506	 Accuracy: 0.8397731551204819
+Epoch [59/100] 	 Validation accuracy 0.6227964743589743
+Epoch [60/100]	 Loss: 0.44948023111076957	 Accuracy: 0.839867281626506
+Epoch [60/100] 	 Validation accuracy 0.6271033653846154
+Best accuracy achieved so far: 0.6271033653846154
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 60 epochs
+Epoch [61/100]	 Loss: 0.4485965878309974	 Accuracy: 0.8395378388554217
+Epoch [61/100] 	 Validation accuracy 0.6243990384615384
+Epoch [62/100]	 Loss: 0.4481423448277525	 Accuracy: 0.8388083584337349
+Epoch [62/100] 	 Validation accuracy 0.6256009615384616
+Epoch [63/100]	 Loss: 0.44730157239070856	 Accuracy: 0.8396790286144579
+Epoch [63/100] 	 Validation accuracy 0.6269030448717948
+Epoch [64/100]	 Loss: 0.4475132225373064	 Accuracy: 0.8401496611445783
+Epoch [64/100] 	 Validation accuracy 0.6272035256410257
+Best accuracy achieved so far: 0.6272035256410257
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 64 epochs
+Epoch [65/100]	 Loss: 0.44620974303548594	 Accuracy: 0.8404555722891566
+Epoch [65/100] 	 Validation accuracy 0.6260016025641025
+Epoch [66/100]	 Loss: 0.44623889302812425	 Accuracy: 0.841796875
+Epoch [66/100] 	 Validation accuracy 0.6256009615384616
+Epoch [67/100]	 Loss: 0.44579510105751363	 Accuracy: 0.8401025978915663
+Epoch [67/100] 	 Validation accuracy 0.6263020833333334
+Epoch [68/100]	 Loss: 0.44539853380656386	 Accuracy: 0.8413262424698795
+Epoch [68/100] 	 Validation accuracy 0.6274038461538461
+Best accuracy achieved so far: 0.6274038461538461
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 68 epochs
+Epoch [69/100]	 Loss: 0.4449666693851531	 Accuracy: 0.8412085843373494
+Epoch [69/100] 	 Validation accuracy 0.6264022435897436
+Epoch [70/100]	 Loss: 0.44413025479718865	 Accuracy: 0.8415144954819277
+Epoch [70/100] 	 Validation accuracy 0.6243990384615384
+Epoch [71/100]	 Loss: 0.4432008474032922	 Accuracy: 0.8420321912650602
+Epoch [71/100] 	 Validation accuracy 0.6280048076923077
+Best accuracy achieved so far: 0.6280048076923077
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 71 epochs
+Epoch [72/100]	 Loss: 0.4432243715792176	 Accuracy: 0.8418674698795181
+Epoch [72/100] 	 Validation accuracy 0.6259014423076923
+Epoch [73/100]	 Loss: 0.44295802730393696	 Accuracy: 0.840808546686747
+Epoch [73/100] 	 Validation accuracy 0.6263020833333334
+Epoch [74/100]	 Loss: 0.44226744373789034	 Accuracy: 0.8413262424698795
+Epoch [74/100] 	 Validation accuracy 0.6245993589743589
+Epoch [75/100]	 Loss: 0.4424931161689112	 Accuracy: 0.8420321912650602
+Epoch [75/100] 	 Validation accuracy 0.6282051282051282
+Best accuracy achieved so far: 0.6282051282051282
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 75 epochs
+Epoch [76/100]	 Loss: 0.44157377204083537	 Accuracy: 0.8422439759036144
+Epoch [76/100] 	 Validation accuracy 0.6280048076923077
+Epoch [77/100]	 Loss: 0.44176447241151906	 Accuracy: 0.8415615587349398
+Epoch [77/100] 	 Validation accuracy 0.6272035256410257
+Epoch [78/100]	 Loss: 0.4412531376513372	 Accuracy: 0.8406673569277109
+Epoch [78/100] 	 Validation accuracy 0.6270032051282052
+Epoch [79/100]	 Loss: 0.4407397324825267	 Accuracy: 0.8419851280120482
+Epoch [79/100] 	 Validation accuracy 0.6269030448717948
+Epoch [80/100]	 Loss: 0.43984249579798745	 Accuracy: 0.8412556475903614
+Epoch [80/100] 	 Validation accuracy 0.6271033653846154
+Epoch [81/100]	 Loss: 0.43999632975333425	 Accuracy: 0.8421969126506024
+Epoch [81/100] 	 Validation accuracy 0.6274038461538461
+Epoch [82/100]	 Loss: 0.4394899999879929	 Accuracy: 0.8431852409638554
+Epoch [82/100] 	 Validation accuracy 0.6269030448717948
+Epoch [83/100]	 Loss: 0.4391716151801218	 Accuracy: 0.842808734939759
+Epoch [83/100] 	 Validation accuracy 0.6271033653846154
+Epoch [84/100]	 Loss: 0.43828034804887084	 Accuracy: 0.8427146084337349
+Epoch [84/100] 	 Validation accuracy 0.6236979166666666
+Epoch [85/100]	 Loss: 0.4382004206663514	 Accuracy: 0.8431852409638554
+Epoch [85/100] 	 Validation accuracy 0.6263020833333334
+Epoch [86/100]	 Loss: 0.43786915667714127	 Accuracy: 0.8428793298192772
+Epoch [86/100] 	 Validation accuracy 0.6282051282051282
+Epoch [87/100]	 Loss: 0.43703143615051204	 Accuracy: 0.8424557605421686
+Epoch [87/100] 	 Validation accuracy 0.625
+Epoch [88/100]	 Loss: 0.43701683783746625	 Accuracy: 0.8438911897590361
+Epoch [88/100] 	 Validation accuracy 0.6280048076923077
+Epoch [89/100]	 Loss: 0.4369422986609749	 Accuracy: 0.8436558734939759
+Epoch [89/100] 	 Validation accuracy 0.6292067307692307
+Best accuracy achieved so far: 0.6292067307692307
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 89 epochs
+Epoch [90/100]	 Loss: 0.4364024413502719	 Accuracy: 0.8437970632530121
+Epoch [90/100] 	 Validation accuracy 0.62890625
+Epoch [91/100]	 Loss: 0.435836918270552	 Accuracy: 0.8434205572289156
+Epoch [91/100] 	 Validation accuracy 0.6278044871794872
+Epoch [92/100]	 Loss: 0.4358244039881301	 Accuracy: 0.8435617469879518
+Epoch [92/100] 	 Validation accuracy 0.6301081730769231
+Best accuracy achieved so far: 0.6301081730769231
+checkpoint saved at data/output/luc/checkpoint_best_linear_model_CIFAR10_.pth after 92 epochs
+Epoch [93/100]	 Loss: 0.43529720642570274	 Accuracy: 0.8433499623493976
+Epoch [93/100] 	 Validation accuracy 0.62890625
+Epoch [94/100]	 Loss: 0.43550312305879163	 Accuracy: 0.8426910768072289
+Epoch [94/100] 	 Validation accuracy 0.6283052884615384
+Epoch [95/100]	 Loss: 0.43511607356549026	 Accuracy: 0.8439617846385542
+Epoch [95/100] 	 Validation accuracy 0.6275040064102564
+Epoch [96/100]	 Loss: 0.43475165824035567	 Accuracy: 0.8436323418674698
+Epoch [96/100] 	 Validation accuracy 0.6272035256410257
+Epoch [97/100]	 Loss: 0.4343555891908795	 Accuracy: 0.8443618222891566
+Epoch [97/100] 	 Validation accuracy 0.6266025641025641
+Epoch [98/100]	 Loss: 0.4338495803166585	 Accuracy: 0.8445030120481928
+Epoch [98/100] 	 Validation accuracy 0.6273036858974359
+Epoch [99/100]	 Loss: 0.43366760538374804	 Accuracy: 0.8441500376506024
+Epoch [99/100] 	 Validation accuracy 0.6279046474358975
+Epoch [100/100]	 Loss: 0.43370242598634884	 Accuracy: 0.8437970632530121
+Epoch [100/100] 	 Validation accuracy 0.6285056089743589
+ Test accuracy : 0.8257211538461539
