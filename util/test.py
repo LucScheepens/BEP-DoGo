@@ -12,6 +12,7 @@ from util.utils import log, save_checkpoint, tiny_imagenet, CIFAR10Imbalanced
 from augmentations import TestTransform
 from optimizers.lars import LARC
 from torch.optim.lr_scheduler import CosineAnnealingLR
+import json
 
 
 def get_domain_net(args):
@@ -57,13 +58,27 @@ def testloaderSimCLR(args, dataset, transform, batchsize, data_dir, val_split=0.
     log("Took {} time to load data!".format(datetime.now() - args.start_time))
     return train_loader, val_loader, test_loader
 
+def multi_acc(args, pred, label):
+    accs_per_label_pct = []
+    
+    for c in range(args.eval.dataset.classes): 
+        of_c = label == c
+        num_total_per_label = of_c.sum()
+        of_c &= pred == label
+        num_corrects_per_label = of_c.sum()
+        accs_per_label_pct.append(num_corrects_per_label / num_total_per_label * 100)
+    return accs_per_label_pct
 
-def train_or_val(args, loader, simclr, model, criterion, optimizer=None, scheduler=None, train=False):
+
+def train_or_val(args, loader, simclr, model, criterion, optimizer=None, scheduler=None, train=False, multi = False):
     """
     Train Linear model
     """
     loss_epoch = 0
     accuracy_epoch = 0
+    n = args.eval.dataset.classes
+    acc_class =[torch.empty(()) for _ in range(n)]
+    comb_length = 0
     simclr.eval()
     if train:
         model.train()
@@ -91,6 +106,20 @@ def train_or_val(args, loader, simclr, model, criterion, optimizer=None, schedul
                 scheduler.step()
 
         loss_epoch += loss.item()
+        if multi == True:
+            accs_per_class = multi_acc(args, predicted, y)
+
+            for i in range(len(accs_per_class)):
+                if step ==1:
+                    acc_class[i] = accs_per_class[i].item()
+                else:
+                    acc_class[i] += accs_per_class[i].item()
+
+            for tensor in predicted :
+                comb_length += tensor.numel()
+    if multi == True:
+        result_list = [tensor/step for tensor in acc_class]
+        return result_list, comb_length
     return loss_epoch, accuracy_epoch
 
 
@@ -119,6 +148,7 @@ def testSSL(args, writer, simclr):
     loss_criterion = nn.CrossEntropyLoss()
 
     best_acc = 0.0
+    acc_class_dict = {}
     log('Testing SSL Model on {}.................'.format(args.eval.dataset.name))
     _, ck_name = os.path.split(args.eval.model_path)
     for epoch in range(1, args.eval.epochs + 1):
@@ -128,6 +158,13 @@ def testSSL(args, writer, simclr):
         loss_epoch1, accuracy_epoch1 = train_or_val(args, val_loader, simclr, linear_model, loss_criterion, train=False)
         val_accuracy = accuracy_epoch1 / len(test_loader)
         log(f"Epoch [{epoch}/{args.eval.epochs}] \t Validation accuracy {val_accuracy}")
+
+        if epoch % 1 == 0:
+            acc_classes = train_or_val(args, test_loader, simclr, linear_model, loss_criterion, train=False, multi=True)
+            log(f'Acc per class:{acc_classes}')
+            acc_class_dict[epoch] = acc_classes
+            with open('convert.txt', 'w') as convert_file:
+                convert_file.write(json.dumps(acc_class_dict))
 
         if best_acc < val_accuracy:
             best_acc = val_accuracy
@@ -141,6 +178,7 @@ def testSSL(args, writer, simclr):
                                 filename='checkpoint_best_linear_model_{}_{}.pth'.format(args.eval.dataset.name, ck_name))
         writer.add_scalar("Accuracy/train{}".format(args.eval.dataset.name), accuracy_epoch / len(train_loader), epoch)
         writer.add_scalar("Accuracy/val{}".format(args.eval.dataset.name), accuracy_epoch1 / len(test_loader), epoch)
+    
 
     # Load best linear model and run inference on test set
     state_dict = torch.load(os.path.join(args.log_dir, 'checkpoint_best_linear_model_{}_{}.pth'.format(args.eval.dataset.name, ck_name)), map_location=args.device)
@@ -150,6 +188,8 @@ def testSSL(args, writer, simclr):
     test_loss, test_acc = train_or_val(args, test_loader, simclr, linear_best_model, loss_criterion, train=False)
     test_acc = test_acc / len(test_loader)
     log(f" Test accuracy : {test_acc}")
+    acc_classes = train_or_val(args, test_loader, simclr, linear_best_model, loss_criterion, train=False, multi=True)
+    log(f'best_model Acc per class:{acc_classes}')
     writer.add_text("Test Accuracy {} :".format(args.eval.dataset.name), "{}".format(test_acc))
 
 

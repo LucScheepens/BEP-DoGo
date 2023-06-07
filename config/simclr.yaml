@@ -1,7 +1,7 @@
 train:
     model: simclr
     backbone: resnet18
-    epochs: 1000
+    epochs: 1
     optimizer:
         name: adam
         lr: 0.0003
@@ -30,7 +30,7 @@ eval:
         data_dir: /data/input/datasets/CIFAR-10
         classes: 10
         img_size: 32
-    epochs: 100
+    epochs: 1
     batchsize: 64
     optimizer:
         name: adam
@@ -40,3 +40,4 @@ eval:
         scheduler: False
     model_path: /data/output/prashant.bhat/ssl/temp/
     num_workers: 4
+    save_dir: /data/output/luc

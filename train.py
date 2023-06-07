@@ -22,10 +22,24 @@ from models import SimCLR, SimSiam
 np.random.seed(20)
 random.seed(20)
 torch.manual_seed(20)
+import json
+from util.curr_learning import ClassProbabilitySampler
 
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
+
+def get_proba():
+    # Open the text file in read mode
+    with open('convert.txt', 'r') as file:
+        # Read the contents of the file
+        content = file.read()
+
+        # Parse the content as a dictionary
+        dictionary = json.loads(content)
+
+    # Print the dictionary
+    return dictionary['100'][0]
 
 def trainloaderSSL(args, transform, imagenet_split='train'):
     """
@@ -44,14 +58,21 @@ def trainloaderSSL(args, transform, imagenet_split='train'):
     elif args.train.dataset.name == 'STL10':
         train_dataset = STL10(args.train.dataset.data_dir, split="unlabeled", download=True, transform=transform)
 
-    train_loader = DataLoader(train_dataset, batch_size=args.train.batchsize, shuffle=True, drop_last=True, num_workers=args.train.num_workers)
+    class_probas = get_proba()
+    class_probas[4] = 0.2
+    class_probas = [1-i for i in class_probas]
+
+    sampler = ClassProbabilitySampler(train_dataset, class_probas)
+
+
+    train_loader = DataLoader(train_dataset, batch_size=args.train.batchsize, sampler=sampler, drop_last=True, num_workers=args.train.num_workers)
     log("Took {} time to load data!".format(datetime.now() - args.start_time))
     return train_loader
 
 
 if __name__ == "__main__":
     args = Options().parse()
-    args.writer = summary_writer(args)
+    args.writer = summary_writer(args, log_dir = '/Users/Luctopikut/bep/data/output/luc2')
     logger(args)
     args.start_time = datetime.now()
     log("Starting at  {}".format(datetime.now()))

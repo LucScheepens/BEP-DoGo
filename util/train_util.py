@@ -7,6 +7,9 @@ import os
 from util.utils import save_checkpoint, log
 from util.test import test_all_datasets
 from criterion import NTXent
+import json
+
+
 
 
 def get_criteria(args):
@@ -28,6 +31,17 @@ def write_scalar(writer, total_loss, loss_p_c, leng, epoch):
     for k in loss_p_c:
         writer.add_scalar("{}_Loss/train".format(k), loss_p_c[k] / leng, epoch)
 
+def multi_acc(pred, label):
+  accs_per_label_pct = []
+  tags = torch.argmax(pred, dim=1)
+  for c in range(3):  # the three classes
+    of_c = label == c
+    num_total_per_label = of_c.sum()
+    of_c &= tags == label
+    num_corrects_per_label = of_c.sum()
+    accs_per_label_pct.append(num_corrects_per_label / num_total_per_label * 100)
+  return accs_per_label_pct
+
 
 def train_one_epoch(args, train_loader, model, criteria, optimizer, scheduler, epoch):
     """
@@ -45,6 +59,18 @@ def train_one_epoch(args, train_loader, model, criteria, optimizer, scheduler, e
         elif args.train.model == 'simsiam':
             fx, fy, zx, zy, px, py = model(x1, y1)
 
+        # nb_classes = 9
+
+        # confusion_matrix = torch.zeros(nb_classes, nb_classes)
+        # with torch.no_grad():
+        #     for i, (inputs, classes) in enumerate(dataloaders['val']):
+        #         inputs = inputs.to(args.device)
+        #         classes = classes.to(args.device)
+        #         outputs = model(inputs)
+        #         _, preds = torch.max(outputs, 1)
+        #         for t, p in zip(classes.view(-1), preds.view(-1)):
+        #                 confusion_matrix[t.long(), p.long()] += 1
+
         # Multiple loss aggregation
         loss = torch.tensor(0).to(args.device)
         for k in criteria:
@@ -57,7 +83,7 @@ def train_one_epoch(args, train_loader, model, criteria, optimizer, scheduler, e
             else:
                 loss_per_criterion[k] += criterion_loss
             loss = torch.add(loss, torch.mul(criterion_loss, criteria[k][1]))
-
+            
         loss.backward()
         optimizer.step()
         if scheduler is not None:
