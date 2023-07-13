@@ -15,6 +15,7 @@ from torch.optim.lr_scheduler import CosineAnnealingLR
 import json
 
 
+
 def get_domain_net(args):
     """ DomainNet datasets - QuickDraw, Sketch, ClipArt """
     train_kv = args.eval.dataset.name + "_train.txt"
@@ -123,7 +124,7 @@ def train_or_val(args, loader, simclr, model, criterion, optimizer=None, schedul
     return loss_epoch, accuracy_epoch
 
 
-def testSSL(args, writer, simclr):
+def testSSL(args, writer, simclr, multi=False):
     for param in simclr.parameters():
         param.requires_grad = False
 
@@ -158,14 +159,7 @@ def testSSL(args, writer, simclr):
         loss_epoch1, accuracy_epoch1 = train_or_val(args, val_loader, simclr, linear_model, loss_criterion, train=False)
         val_accuracy = accuracy_epoch1 / len(test_loader)
         log(f"Epoch [{epoch}/{args.eval.epochs}] \t Validation accuracy {val_accuracy}")
-
-        if epoch % 1 == 0:
-            acc_classes = train_or_val(args, test_loader, simclr, linear_model, loss_criterion, train=False, multi=True)
-            log(f'Acc per class:{acc_classes}')
-            acc_class_dict[epoch] = acc_classes
-            with open('convert.txt', 'w') as convert_file:
-                convert_file.write(json.dumps(acc_class_dict))
-
+        
         if best_acc < val_accuracy:
             best_acc = val_accuracy
             log('Best accuracy achieved so far: {}'.format(best_acc))
@@ -178,7 +172,17 @@ def testSSL(args, writer, simclr):
                                 filename='checkpoint_best_linear_model_{}_{}.pth'.format(args.eval.dataset.name, ck_name))
         writer.add_scalar("Accuracy/train{}".format(args.eval.dataset.name), accuracy_epoch / len(train_loader), epoch)
         writer.add_scalar("Accuracy/val{}".format(args.eval.dataset.name), accuracy_epoch1 / len(test_loader), epoch)
-    
+        if multi:
+            if epoch % 1 == 0:
+                acc_classes = train_or_val(args, test_loader, simclr, linear_model, loss_criterion, train=False, multi=True)
+                log(f'Acc per class:{acc_classes}')
+                acc_class_dict[epoch] = acc_classes
+                with open('convert_imbalanced.txt', 'w') as convert_file:
+                    convert_file.write(json.dumps(acc_class_dict))
+                for param in simclr.parameters():
+                    param.requires_grad = True
+                break
+                
 
     # Load best linear model and run inference on test set
     state_dict = torch.load(os.path.join(args.log_dir, 'checkpoint_best_linear_model_{}_{}.pth'.format(args.eval.dataset.name, ck_name)), map_location=args.device)
@@ -192,6 +196,53 @@ def testSSL(args, writer, simclr):
     log(f'best_model Acc per class:{acc_classes}')
     writer.add_text("Test Accuracy {} :".format(args.eval.dataset.name), "{}".format(test_acc))
 
+def test_currSSL(args, writer, simclr, multi=False):
+    for param in simclr.parameters():
+        param.requires_grad = False
+
+    linear_model = LinearEvaluation(args.projection_size, args.eval.dataset.classes)
+
+    linear_model = linear_model.to(args.device)
+
+    scheduler = None
+    if args.eval.optimizer.name == 'adam':
+        optimizer = optim.Adam(linear_model.parameters(), lr=args.eval.optimizer.lr, weight_decay=args.eval.optimizer.weight_decay)
+    elif args.eval.optimizer.name == 'SGD':
+        optimizer = optim.SGD(linear_model.parameters(), lr=args.eval.optimizer.lr,
+                               weight_decay=args.eval.optimizer.weight_decay, momentum=args.eval.optimizer.momentum)
+
+    if args.eval.optimizer.scheduler:
+            scheduler = CosineAnnealingLR(optimizer, T_max=100, eta_min=3e-4)
+
+    transform = TestTransform(args.eval.dataset.img_size)
+    train_loader, val_loader, test_loader = testloaderSimCLR(args, args.eval.dataset.name, transform,
+                                                             args.eval.batchsize, args.eval.dataset.data_dir)
+    loss_criterion = nn.CrossEntropyLoss()
+
+    best_acc = 0.0
+    acc_class_dict = {}
+    log('Testing SSL Model on {}.................'.format(args.eval.dataset.name))
+    _, ck_name = os.path.split(args.eval.model_path)
+    for epoch in range(1,2):
+        loss_epoch, accuracy_epoch = train_or_val(args, train_loader, simclr, linear_model, loss_criterion, optimizer, scheduler, train=True)
+        log(f"Epoch [{epoch}/{args.eval.epochs}]\t Loss: {loss_epoch / len(train_loader)}\t Accuracy: {accuracy_epoch / len(train_loader)}")
+
+        loss_epoch1, accuracy_epoch1 = train_or_val(args, val_loader, simclr, linear_model, loss_criterion, train=False)
+        val_accuracy = accuracy_epoch1 / len(test_loader)
+        log(f"Epoch [{epoch}/{args.eval.epochs}] \t Validation accuracy {val_accuracy}")
+        
+        if multi:
+            if epoch % 1 == 0:
+                acc_classes = train_or_val(args, test_loader, simclr, linear_model, loss_criterion, train=False, multi=True)
+                log(f'Acc per class:{acc_classes}')
+                acc_class_dict[epoch] = acc_classes
+                with open('convert.txt', 'w') as convert_file:
+                    convert_file.write(json.dumps(acc_class_dict))
+                    convert_file.close()
+                    log('finished writing to convert file')
+                for param in simclr.parameters():
+                    param.requires_grad = True
+                
 
 def test_all_datasets(args, writer, model):
     """
@@ -203,7 +254,7 @@ def test_all_datasets(args, writer, model):
         args.eval.dataset.name = "CIFAR10"
         args.eval.dataset.data_dir = "/data/input/datasets/CIFAR-10"
         args.eval.dataset.classes = 10
-        testSSL(args, writer, model)
+        testSSL(args, writer, model, multi= True)
         # # # CIFAR100
         # args.eval.dataset.img_size = 32
         # args.eval.dataset.name = "CIFAR100"

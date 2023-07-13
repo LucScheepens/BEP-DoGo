@@ -1,7 +1,7 @@
 train:
     model: simclr
     backbone: resnet18
-    epochs: 1
+    epochs: 100
     optimizer:
         name: adam
         lr: 0.0003
@@ -9,9 +9,12 @@ train:
         momentum: 0
         scheduler: False
     dataset:
-        name: CIFAR10
+        name: CIFAR10Imbalanced
         data_dir: /data/input/datasets/CIFAR-10
         img_size: 32
+    loss:
+        gamma: 2.0
+        alpha: 0.25
     batchsize: 256
     temperature: 0.5
     n_proj: 128
@@ -30,7 +33,7 @@ eval:
         data_dir: /data/input/datasets/CIFAR-10
         classes: 10
         img_size: 32
-    epochs: 1
+    epochs: 100
     batchsize: 64
     optimizer:
         name: adam
@@ -38,6 +41,6 @@ eval:
         weight_decay: 1.e-6
         momentum: 0
         scheduler: False
-    model_path: /data/output/prashant.bhat/ssl/temp/
+    model_path: /data/output/luc/ssl
     num_workers: 4
     save_dir: /data/output/luc
